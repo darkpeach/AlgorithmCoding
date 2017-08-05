@@ -3,5 +3,6 @@ result = Solution()
 
 ########
 
-print(result)
-
+l = [1,2,3,4,5]
+if 0:
+    print("exist")
