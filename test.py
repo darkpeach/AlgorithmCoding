@@ -1,7 +1,5 @@
-from _234_PalindromeLinkedList import Solution
+from _027_RemoveElement import Solution
 result = Solution()
 
 ########
-l = [1,4,5]
-n=l.index(l.pop())
-print(n)
+print(result.removeElement([3,2,2,3],3))
