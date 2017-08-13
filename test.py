@@ -3,6 +3,6 @@ result = Solution()
 
 ########
 
-c = [10,1,2,7,6,1,5]
-c.sort()
-print(c)
+c = []
+s = "".join(map(str, c or [0]))
+print(s)
