@@ -3,6 +3,5 @@ result = Solution()
 
 ########
 
-c = []
-s = "".join(map(str, c or [0]))
-print(s)
+for i in range(1,-1,-1):
+    print(i)
