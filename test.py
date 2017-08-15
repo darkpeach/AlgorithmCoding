@@ -1,7 +1,9 @@
 from _029_DivideTwoInteger import Solution
 result = Solution()
 
-########
-
-for i in range(1,-1,-1):
-    print(i)
+#########
+n = 4
+nums = []
+for i in range(n):
+    nums.append(i + 1)
+print(nums)
