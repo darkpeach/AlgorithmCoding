@@ -2,8 +2,6 @@ from _029_DivideTwoInteger import Solution
 result = Solution()
 
 #########
-n = 4
-nums = []
-for i in range(n):
-    nums.append(i + 1)
-print(nums)
+a = (1,2,3,3,4)
+a.append(5)
+print(a.pop())
