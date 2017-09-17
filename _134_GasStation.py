@@ -5,25 +5,20 @@ class Solution(object):
         :type cost: List[int]
         :rtype: int
         """
-        for start in range(0, len(gas)):
+        length = len(gas)
+        diff = []
+        for i in xrange(length):
+            diff.append(gas[i] - cost[i])
+        for i in xrange(length):
+            diff.append(gas[i] - cost[i])
+        for start in xrange(0, length):
+            if diff[start] < 0:
+                continue
             total = 0
-            flag = 0
-            for station in range(start, len(gas)):
-                total += gas[station]
-                if total < cost[station]:
-                    break
-                else:
-                    total -= cost[station]
-                    flag += 1
-            else:
-                for station in range(0, start):
-                    total += gas[station]
-                    if total < cost[station]:
-                        break
-                    else:
-                        total -= cost[station]
-                        flag += 1
-
-            if flag == len(gas):
+            now = start
+            while total >= 0 and now < start + length:
+                total += diff[now]
+                now += 1
+            if now == start + length and total >= 0:
                 return start
         return -1
